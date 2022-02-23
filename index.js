@@ -23,7 +23,7 @@ app.use(express.json());
 
 //Routing
 app.use("/api/auth", require("./routes/auth"));
-
+app.use("/api/projects", require("./routes/projects"));
 //requests Listener
 app.listen(port, () => {
   console.log(`Servidor corriendo en puerto ${port}`);
